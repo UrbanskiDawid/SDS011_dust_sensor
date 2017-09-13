@@ -243,11 +243,11 @@ if __name__ == "__main__":
     print("working period: work 30 seconds and sleep {} seconds".format(r*60-30))
 
 
-###########READ STATUS###############
-while True:
+  ###########READ STATUS###############
+  while True:
     try:
       r = sds011._response()
       logging.info(ReadingMessage(r))
     except AssertionError as e:
       pass
-#####################################
+  #####################################
