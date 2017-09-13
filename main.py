@@ -32,7 +32,7 @@ if __name__ == "__main__":
   r = sds011.is_working()
   print("working: ",r)
 
-  r = sds011.set_working_period(1)
+  r = sds011.set_working_period(10)
   r = sds011.get_working_period()
   if r==0:
     print("working period: continous")
